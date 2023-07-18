@@ -27,6 +27,7 @@ public class SpoopyMod implements ModInitializer {
 		LOGGER.info("Hello Fabric world!");
 
 		TNTExplodeListen.register();
+		asdfasda
 
 		CommandRegistrationCallback.EVENT.register((dispatcher, dedicated, test) -> {
 			TNTCommand.register(dispatcher);
