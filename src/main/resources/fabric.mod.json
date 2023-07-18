@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "spoopy-mod",
+	"version": "${version}",
+	"name": "Spoopy Mod",
+	"description": "A pretty Spoopy Mod",
+	"authors": [
+		"Ur Mom"
+	],
+	"contact": {
+		"homepage": "https://youtu.be/dQw4w9WgXcQ",
+		"sources": "https://youtu.be/dQw4w9WgXcQ"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/spoopy-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.hayden.spoop.SpoopyMod"
+		],
+		"client": [
+			"com.hayden.spoop.ExampleModClient"
+		],
+		"fabric-datagen": [
+			"com.hayden.spoop.ExampleModDataGenerator"
+		]
+	},
+	"mixins": [
+		"spoopy-mod.mixins.json",
+		{
+			"config": "spoopy-mod.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
